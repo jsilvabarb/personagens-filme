@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2? family = Roboto: ital, wght @ 0,700; 1,400 & display swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.lista-filmes-item {
+    display: flex;
+    padding: 50px;
+   
+}
+.lista-filmes-item img {
+    height: 150px;
+    width: 100px;
+}
+
+.lista-filmes-item .descricao {
+    padding-left: 50px;
+}
+.lista-filmes-item h4 {
+    font-weight: normal;
+    text-align: justify;
+    width: 85%;
+
+}
+
+.lista-filmes-item .btn-personagem {
+    border: 1px solid #6670ff;
+    background-color: #6670ff;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    width: 120px;
+    border-radius: 5px; 
+    text-align: center;
+    margin-bottom: 20px;
+     
+}
+.lista-filmes-item .btn-personagem:hover {
+    background-color:transparent;
+    color: #6670ff;
+}
+.lista-filmes-item hr {
+    color: rgb(158, 145, 145);
+}
