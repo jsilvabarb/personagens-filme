@@ -2,6 +2,10 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+.personagens-area .personagens-lista {
+    width: 60%;
+   
+}
 
 .personagens-area .delete {
     background-color:transparent;
