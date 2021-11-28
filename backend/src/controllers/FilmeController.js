@@ -3,17 +3,15 @@ const Filme = require("../models/Filme");
 module.exports = {
 
     
-    async  index(req, res)
+    async  GetAll(req, res)
     {
         const filmes = await Filme.findAll();
 
         res.json(filmes);
     },
-    
-
-    async store(req, res) 
+    async Add(req, res) 
     {    
-       
+    //    Pegando informações do corpo da requisição
         const 
         { 
             nome,
@@ -21,7 +19,7 @@ module.exports = {
             poster,
             
         } = req.body;
-
+    // Insert na tabela Filmes
         const filme = await Filme.create(
             {
                 nome,
