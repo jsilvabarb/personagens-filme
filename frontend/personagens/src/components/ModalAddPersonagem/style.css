@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2? family = Roboto: ital, wght @ 0,700; 1,400 & display swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.modal-add-personagens{
+   width:100%;
+   height:100vh;
+   position:absolute;
+   top:0;
+   left:0;
+   z-index:10;
+   background-color:rgba(0, 0, 0, 8);
+   display:flex;
+   justify-content:center;
+   align-items: center;
+}
+.modal-add-personagens .container {
+    background-color:#fff;
+    color:#000;
+    width:60%;
+    height:80vh;
+    border-radius:20px;
+}
+.modal-add-personagens .close {
+    cursor:pointer;
+    background-color:transparent;
+    border:none;
+    top:16px;
+    right:calc(-100% + 64px);
+    display:flex;
+    position:relative;
+    align-items:center;
+    color: #d3d3d3;
+}
+.modal-add-personagens .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-add-personagens .content .right {
+    width: 45%;
+    padding-left: 20px;
+}
+.modal-add-personagens .content .column {
+    width: calc(50% - 30px);
+
+}
+
+ .formulario {
+    width: 100%;
+    margin-top: 100px;
+   
+}
+.formulario input {
+    margin-bottom:20px;
+    padding:10px;
+    border-radius:20px;
+    border: 1px solid #d3d3d3;
+}
+.formulario button {
+    background-color: #00FF00;
+    color: #fff;
+    border: 1px solid #00FF00;
+    border-radius: 5px;
+    height: 20px;
+    width: 60px;
+    cursor:pointer;
+    
+}
+.formulario button:hover {
+    color: #00FF00;
+    background-color:transparent;
+}
+.message {
+    color: #000;
+    font-weight:normal;    
+}
