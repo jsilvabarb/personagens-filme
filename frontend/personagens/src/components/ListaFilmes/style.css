@@ -14,6 +14,7 @@
 
 .lista-filmes-item .descricao {
     padding-left: 50px;
+    color: rgb(53, 51, 51);
 }
 .lista-filmes-item h4 {
     font-weight: normal;
@@ -23,8 +24,8 @@
 }
 
 .lista-filmes-item .btn-personagem {
-    border: 1px solid #6670ff;
-    background-color: #6670ff;
+    border: 1px solid rgb(153, 42, 147);
+    background-color: rgb(153, 42, 147);
     color: #fff;
     font-size: 16px;
     height: 40px;
@@ -32,11 +33,13 @@
     border-radius: 5px; 
     text-align: center;
     margin-bottom: 20px;
+    cursor: pointer;
+    transition: ease all 3ms;
      
 }
 .lista-filmes-item .btn-personagem:hover {
     background-color:transparent;
-    color: #6670ff;
+    color: rgb(153, 42, 147);
 }
 .lista-filmes-item hr {
     color: rgb(158, 145, 145);
