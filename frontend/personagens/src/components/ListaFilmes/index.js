@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable import/no-anonymous-default-export */
 import React, { useState, useEffect } from 'react';
 import "./style.css";
 import Personagensdb from '../../Personagensdb';
