@@ -3,17 +3,13 @@ const Filme = require("../models/Filme");
 
 module.exports = {
 
-    
+    // Exibe todos os personagens de acordo com cada filme
     async  GetAll(req, res)
     {
         const { id_filme } = req.params;
 
-        // const filme = await Filme.findByPk(id_filme, {
-        //     include: { association: "personagem"}
-        // });
-
         // eslint-disable-next-line no-unused-vars
-        const [personagens, metadata] = await Personagem.sequelize.query("SELECT personagems.id_filme,personagems.id, personagems.nome, personagems.imagem from personagems join filmes on personagems.id_filme = filmes.id WHERE personagems.id_filme = :sql_id_filme", 
+        const [personagens, metadata] = await Personagem.sequelize.query("SELECT personagems.id_filme,personagems.id, personagems.nome, personagems.descricao, personagems.imagem from personagems join filmes on personagems.id_filme = filmes.id WHERE personagems.id_filme = :sql_id_filme", 
         {
             replacements:
             {
@@ -25,9 +21,9 @@ module.exports = {
         console.log(personagens);
 
         return res.json(personagens);
-    },
-    
+    },   
 
+    // Adiciona personagens de acordo com o filme
     async Add(req, res) 
     {    
         const {  id_filme } = req.params;
@@ -61,6 +57,7 @@ module.exports = {
         return res.json(personagem);
     },
 
+    // Atualiza os dados do Personagem
     async Update(req, res)
     {
         const { id_personagem } = req.params;
@@ -86,6 +83,7 @@ module.exports = {
         return res.json(personagemUpdate);
     },
 
+    // Deleta o personagem
     async Delete(req, res) 
     {
         const { id_personagem } = req.params;
