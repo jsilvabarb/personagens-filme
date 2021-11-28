@@ -1,0 +1,30 @@
+.formulario {
+    width: 100%;
+    
+}
+.formulario input, textarea {
+    margin-left: 20%;
+    display: block;
+    width: 60%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #d3d3d3;
+    padding: 10px;
+}
+.formulario label {
+    margin-left: 20%;
+    padding-bottom: 5px;
+}
+.formulario button {
+    margin-left: 20%;
+    height: 40px;
+    width: 120px;
+    background-color: #00FF00;
+    color: #fff;
+    border: 1px solid #00FF00;
+    border-radius: 5px;
+}
+.formulario button:hover {
+    background-color: transparent;
+    color: #00FF00;
+}
