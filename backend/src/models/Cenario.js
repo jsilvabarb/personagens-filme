@@ -13,6 +13,7 @@ class Cenario extends Model
             }
         );
     }
+    // Relacionamento 
     static associate(models){
         this.hasMany(models.Personagem,  { foreignKey: "id_personagem", as: "personagem" });
     }
