@@ -16,6 +16,8 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: { model: "personagems", key: "id"},
+        onUpdate: "CASCADE",
+        onDelete: "CASCADE",
       },
       imagem: {
         type: Sequelize.STRING,
