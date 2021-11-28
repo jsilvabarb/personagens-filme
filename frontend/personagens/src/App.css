@@ -2,9 +2,46 @@
   box-sizing: border-box;
 }
 body{
-  background-color: #111;
+  background-color: #fff;
   color: #FFF;
   margin:0;
   font-family: 'Roboto', sans-serif;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: rgb(153, 42, 147);
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  
+  
+}
+.menu h2 {
+ 
+}
+.menu button {
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: rgb(153, 42, 147);
+  font-size: 16px;
+  height: 40px;
+  width: 120px;
+  border-radius: 5px; 
+  text-align: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all ease 0.5ms;
+}
+.menu button:hover {
+  background-color:transparent;
+  color: #fff;
+}
+
+.filmes {
+  position: relative;
+  top: 50px;
+  padding-top: 100px;
 }
 
