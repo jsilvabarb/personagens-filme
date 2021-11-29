@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Personagensdb from "../../Personagensdb";
 import ListaPersonagens from "../ListaPersonagens" 
 import ModalAddPersonagem from "../ModalAddPersonagem";
-import {FaTrashAlt}  from "react-icons/fa";
+import {FaWindowClose}  from "react-icons/fa";
 import "./style.css";
 
 const Modal = ({id = "modal", onClose = () => {}, idFilme, filme, descricao} ) => {
@@ -30,7 +30,7 @@ const Modal = ({id = "modal", onClose = () => {}, idFilme, filme, descricao} ) =
         <div id={id} className="modal-personagens" onClick={handleOutsideClick}>
             
            <div className="container" >
-                <button className="close" onClick={onClose}><h3>Voltar</h3></button>
+                <button className="close" onClick={onClose}><h3><FaWindowClose/></h3></button>
                 <div className="cabecalho"> 
                     <h2>{filme}</h2>
                     {descricao}
