@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2? family = Roboto: ital, wght @ 0,700; 1,400 & display swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.modal-add-personagens{
+   width:100%;
+   height:100vh;
+   position:absolute;
+   top:0;
+   left:0;
+   z-index:10;
+   background-color:transparent;
+   display:flex;
+   justify-content:center;
+   align-items: center;
+   
+}
+.modal-add-personagens .container {
+    background-color:#fff;
+    color:#000;
+    width:60%;
+    height:80vh;
+    border-radius:20px;
+}
+.modal-add-personagens .container h2,p {
+    text-align: center;
+}
+.modal-add-personagens .close {
+    cursor:pointer;
+    background-color:transparent;
+    border:none;
+    top:16px;
+    right:calc(-100% + 64px);
+    display:flex;
+    position:relative;
+    align-items:center;
+    color: #d3d3d3;
+}
+.message {
+    color: #000;
+    font-weight:normal;    
+}
