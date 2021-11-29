@@ -1,0 +1,35 @@
+.modal-update-personagens{
+    width:100%;
+    height:100vh;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:10;
+    background-color:transparent;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    
+ }
+ .modal-update-personagens .container h2 {
+     text-align: center;
+     margin-bottom: 10px;
+ }
+ .modal-update-personagens .container {
+     background-color:#fff;
+     color:#000;
+     width:60%;
+     height:80vh;
+     border-radius:20px;
+ }
+ .modal-update-personagens .close {
+     cursor:pointer;
+     background-color:transparent;
+     border:none;
+     top:16px;
+     right:calc(-100% + 64px);
+     display:flex;
+     position:relative;
+     align-items:center;
+     color: #d3d3d3;
+ }
