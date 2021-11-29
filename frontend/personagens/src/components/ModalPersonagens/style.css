@@ -4,25 +4,25 @@
 }
 
 .modal-personagens {
-   width:100%;
-   height:100vh;
-   position:absolute;
-   top:0;
-   left:0;
-   z-index:10;
-   background-color:rgba(0, 0, 0, 8);
-   display:flex;
-   justify-content:center;
-   align-items: center;
+    position:fixed;
+    width:100%;
+    height:100vh;
+    top:0px;
+    left:0;
+    z-index:9999;
+    background-color:rgba(153, 42, 147, 0.534);
+    display:flex;
+    justify-content:center;
+    align-items: center;
 }
-.container {
+.modal-personagens .container {
     background-color:#fff;
     color:#000;
     width:60%;
     height:80vh;
     border-radius:20px;
 }
-.close {
+.modal-personagens .close {
     cursor:pointer;
     background-color:transparent;
     border:none;
@@ -43,27 +43,29 @@
     display:flex;
     margin-top:-20px;
     padding-left:20px;
+    width: 300px;
+     margin-bottom: -80px;
 }
 .corpo .message {
     font-weight:normal;
     color: #d3d3d3;
 }
-.btn-add-personagem {
-    border: 1px solid #6670ff;
-    background-color: #6670ff;
+.btn-add-personagem {    
+    border: 1px solid rgb(153, 42, 147);
+    background-color: rgb(153, 42, 147);
     color: #fff;
     font-size: 16px;
     height: 40px;
     width: 120px;
     border-radius: 5px; 
     text-align: center;
-    top: 500px;
-    left: 560px;
-    position: absolute;
+    top: -40000px;
+    cursor: pointer;
+    transition: ease all 3ms;
 }
 .btn-add-personagem:hover {
     background-color:transparent;
-    color: #6670ff;
+    color: rgb(153, 42, 147);
 }
 .rodape {
     padding-left: 20px;
